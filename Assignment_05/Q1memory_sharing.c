@@ -8,7 +8,7 @@
 # include<string.h>
 #include <sys/wait.h>
 #include <stdio_ext.h>
-#include <ctype.h> // required for toupper function
+#include <ctype.h>
 
 
 void uppercase(char *str){
@@ -22,7 +22,7 @@ void uppercase(char *str){
 	// printf("\nFunction call end");
 }
 
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
 	int pid;
 	char *a,*b,c;
@@ -55,7 +55,7 @@ int main(int argc, char const *argv[])
 		shmdt(b);
 	}
 
-	shmctl(id,IPC_RMID, NULL);
+	shmctl(id,IPC_RMID, NULL);//shmctl() is to remove a shared memory segment using the IPC_RMID command.
 	return 0;
 }
 
