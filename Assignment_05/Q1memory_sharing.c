@@ -28,8 +28,9 @@ int main(int argc, char const *argv[])
 	char *a,*b,c;
 	int id,n,i;
 	// shared memory get -> shmget()
-	id = shmget(111,50,IPC_CREAT | 00666); //Create the shared memory segment or use an already created shared memory segment (shmget())
-
+	// id = shmget(111,50,IPC_CREAT | 00666); //Create the shared memory segment or use an already created shared memory segment (shmget())
+	id = shmget(IPC_PRIVATE, 50, 00666); //IPC_PRIVATE will create a new shared memory segment with a unique key that is not shared with any other process. This means that the created shared memory segment is private to the process that created it and cannot be accessed by any other process.
+	// arg1 => key arg2 => size of buffer arg3=> create command , 00666: This is the permission mode for the shared memory segment that will be created.
 	pid = fork();
 
 	if(pid > 0) // parent
