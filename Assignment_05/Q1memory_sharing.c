@@ -10,6 +10,7 @@
 #include <stdio_ext.h>
 #include <ctype.h> // required for toupper function
 
+
 void uppercase(char *str){
 	// printf("\nFunction call start\n");
 	int i=0;
