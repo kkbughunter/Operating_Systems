@@ -33,11 +33,11 @@ int main(int argc, char const *argv[])
 
 	if(pid > 0) // parent
 	{
-		printf("\nparent process\n");
+		printf("\nParent Process:\n");
 		id = shmget(111,2,IPC_CREAT|00666);
 		a = shmat(id,NULL,0); //Attach the process to the already created shared memory segment (shmat())
 		// printf("\nParent Process start\n");
-		printf("Enter your name : ");
+		printf("Enter a name to convert into uppercase: ");
 		scanf("%s",a);
 		wait(NULL);
 		shmdt(a);
@@ -45,11 +45,11 @@ int main(int argc, char const *argv[])
 	else // child
 	{
 		sleep(3);
-		printf("\nchild process");
+		printf("\nChild Process:");
 		id = shmget(111,2,0);
 		b = shmat(id,NULL,0);
 		uppercase(b);
-		printf("\nYour name in uppercase : %s\n", b);
+		printf("\nName in Uppercase : %s\n", b);
 		shmdt(b);
 	}
 
@@ -58,9 +58,3 @@ int main(int argc, char const *argv[])
 }
 
 // KKBUGHUNTER
-
-
-
-
-
-
