@@ -28,7 +28,7 @@ int main()
 	while(*shm!='*')
 	{		
 		char a[100];
-		printf("mesaage to send (*to end):");
+		printf("send a message to client (* to stop):");
 		fgets(a, sizeof(a), stdin);
 		if(a[0]!='*'){
 			s = shm+1;

@@ -39,7 +39,7 @@ int main()
 			putchar('\n');
 
 			char a[100];
-			printf("message to send (* to end):");
+			printf("Send Message to Server (* to stop):");
 			fgets(a, sizeof(a), stdin);
 			if(a[0]!='*'){
 				s=shm+1;
