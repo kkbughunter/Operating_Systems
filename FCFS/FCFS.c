@@ -11,8 +11,7 @@ struct processer{
 
 void print_table(struct processer **p, int n);
 void print_gunth_chart(struct processer **p, int n);
-void merge_sort(struct processer **p, int left, int right);
-void merge(struct processer **p, int left, int mid, int right);
+void insertion_sort(struct processer **p, int n);
 
 
 void insertion_sort(struct processer **p, int n) {
