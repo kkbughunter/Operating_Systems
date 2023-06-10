@@ -227,7 +227,7 @@ void printStatus(struct ContiguousAllocation *ca, int no_of_files)
 {
     // printf("debug\n");
     int i = 0;
-    printf(".--------------------------------------------.\n");
+    printf(".-----------------Directory------------------.\n");
     printf("|%-20s|%15s|%7s|\n", "fileName", "starting Block", "length");
     printf("|--------------------------------------------|\n");
     for (i = 0; i < no_of_files; i++)
