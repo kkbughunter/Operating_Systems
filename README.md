@@ -5,6 +5,10 @@
 
 ## Assignments 
 
+Assignment 01  [Study of System call & System commands](https://github.com/KKBUGHUNTER/Operating_Systems/blob/main/Assignment-01)<br>
+   - [fork, getpid, getppid, sleep, wait](https://github.com/KKBUGHUNTER/Operating_Systems/blob/main/Assignment-01/Q2_fork_getpid_getppid_sleep_wait.c)
+   - [Factorial Child Process](https://github.com/KKBUGHUNTER/Operating_Systems/blob/main/Assignment-01/Q3_factorial%20_child.c)<br>
+
 Assignment 10  [File Allocation](https://github.com/KKBUGHUNTER/Operating_Systems/blob/main/Assignment_10)<br>
   - [Contiguous Allocation](https://github.com/KKBUGHUNTER/Operating_Systems/blob/main/Assignment_10/ContiguousAllocation.c)
   - [Linked Allocation](https://github.com/KKBUGHUNTER/Operating_Systems/blob/main/Assignment_10/LinkedAllocation.c)
