@@ -1,1 +1,0 @@
- temp->status = 1;

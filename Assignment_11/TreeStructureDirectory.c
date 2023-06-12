@@ -205,9 +205,4 @@ folder-1
 3
 
 
-while (temp != NULL)
-    {
-        printf("|  %-18s|%12d  |", temp->fileName, temp->dirLocation);
-        temp = temp->next;
-    }
 */
